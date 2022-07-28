@@ -1,6 +1,12 @@
 .benefits__list {
   @media screen and(min-width: 768px) {
     display: flex;
+    gap: 22px;
+  }
+
+  @media screen and(min-width: 1366px) {
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -8,9 +14,15 @@
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+
+  @media screen and(min-width: 1366px) {
+    position: relative;
+    margin: 0;
+  }
 }
 
 .benefits__text {
+  width: 146px;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(23 / 14);
@@ -20,6 +32,7 @@
   margin-left: 8px;
 
   @media screen and(min-width: 1366px) {
+    width: 270px;
     font-size: 20px;
     line-height: calc(33 / 20);
   }
@@ -28,6 +41,12 @@
 .benefits__icon-size {
   width: 60px;
   height: 60px;
-  // width: 100px;
-  // height: 100px;
+
+  @media screen and(min-width: 1366px) {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -20px;
+    left: -75px;
+  }
 }
