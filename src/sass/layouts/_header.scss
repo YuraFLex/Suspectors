@@ -1,25 +1,99 @@
 .header {
   padding: 30px;
+  background-color: rgb(173, 170, 170);
+  // width: 100%;
+
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1440px) {
+  }
 }
 
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  // position: fixed;
+}
+
+.header__logo {
+  @media screen and (min-width: 768px) {
+    width: 128px;
+    height: 45px;
+  }
+  @media screen and (min-width: 1440px) {
+  }
+}
+
+.nav {
+  display: none;
+
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .nav__list {
   display: flex;
   gap: 40px;
+
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1440px) {
+  }
+}
+
+.nav__link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  color: $second-text-color;
+  transition: ease-in 0.3s;
+
+  &:hover,
+  &:focus {
+    color: $brend-color;
+  }
 }
 
 .header__btn {
   background-color: transparent;
   border: 2px solid $brend-color;
+  width: 354px;
+  padding: 25px 44px;
   margin-left: 40px;
   font-weight: 700;
-  font-size: 1.2;
-  line-height: 17px;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.14em;
   color: $brend-color;
   text-transform: uppercase;
+  transition: ease-in 0.3s;
+
+  display: none;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $main-bg-color;
+    background-color: $brend-color;
+    color: $light-text-color;
+  }
 }
+
+// @media screen and (min-width: 320px) {
+// }
+// @media screen and (min-width: 768px) {
+// }
+// @media screen and (min-width: 1440px) {
+// }
