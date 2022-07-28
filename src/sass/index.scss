@@ -1,3 +1,38 @@
 @import './base/utils';
 @import './common';
-@import './example';
+
+// Header
+@import './layouts/header';
+
+// Hero
+@import './layouts/hero';
+
+// Benefits
+@import './layouts/benefits';
+
+// Problem
+@import './layouts/problems';
+
+// How we do
+@import './layouts/howwedo';
+
+// Program
+@import './layouts/program';
+
+// Features
+@import './layouts/features';
+
+// Teacher
+@import './layouts/teacher';
+
+// Guarantee
+@import './layouts/guarantee';
+
+// Reviews
+@import './layouts/reviews';
+
+// Registrations
+@import './layouts/registrations';
+
+// Footer
+@import './layouts/footer';
