@@ -1,3 +1,16 @@
 .guarantee__item {
-    
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.guarantee__text {
+    color: $brend-color;
+}
+
+.guarantee__item::before {
+    content: "";
+    width: 22px;
+    height: 30px;
+    background-image: url(../src/images/symbol-defs.svg#campfire);
 }
