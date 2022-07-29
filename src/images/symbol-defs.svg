@@ -23,6 +23,20 @@
 <path fill="#ff6b09" style="fill: var(--color2, #ff6b09)" d="M44.608 6.032c-0.062-0.24-0.217-0.637-0.366-0.766-0.135-0.118-0.149-0.322-0.030-0.456s0.324-0.148 0.46-0.030c0.351 0.305 0.535 0.963 0.568 1.092 0.045 0.173-0.060 0.349-0.235 0.393-0.178 0.044-0.353-0.063-0.397-0.232z"></path>
 </symbol>
 
+
+<!-- Mobile -->
+
+  <symbol id="btn-mobile-close" viewBox="0 0 53 32">
+<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.5714" d="M2.286 2.286h48"></path>
+<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.5714" d="M2.286 16h48"></path>
+<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.5714" d="M2.286 29.714h48"></path>
+</symbol>
+
+  <symbol id="btn-mobile-close" viewBox="0 0 30 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.5556" d="M1.781 28.885l25.77-25.77"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.5556" d="M27.552 28.885l-25.77-25.77"></path>
+</symbol>
+
 <!-- Benefits -->
 
   <symbol id="author" viewBox="0 0 32 32">
