@@ -29,13 +29,16 @@
 
 .features__inner {
   padding: 35px 22px;
+  background-color: $main-bg-color;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
   @media screen and(min-width: 768px) {
     padding: 40px 98px;
   }
 
-  // padding: 67px 113px;
-  background-color: $main-bg-color;
+  @media screen and(min-width: 1366px) {
+    padding: 67px 113px;
+  }
 }
 
 .features_list {
