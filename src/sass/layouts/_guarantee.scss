@@ -1,0 +1,39 @@
+.guarantee-title {
+    text-align: center;
+}
+
+.guarantee {
+    display: flex;
+    flex-direction: column;
+    // max-width: 1314px;
+    gap: 20px;
+    padding-top: 38px;
+    padding-bottom: 57px;
+    padding-right: 122px;
+    padding-left: 102px;
+    background-color: $guarantee-bg-color;
+}
+
+.guarantee__item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.guarantee__text {
+    color: $brend-color;
+}
+
+.guarantee__item::before {
+    content: "";
+    display: inline-block;
+    margin-right: 30px;
+    width: 22px;
+    height: 30px;
+    background-image: url(..//images/guarantee/guarantee.svg);
+    background-size: contain;
+}
+
+.guarantee__item:not(:last-child) {
+    border-left: 1px dashed $second-text-color;
+}
