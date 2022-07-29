@@ -1,0 +1,41 @@
+.teacher-container {
+    // display: flex;
+    // flex-direction: column;
+}
+
+.teacher {
+    // display: flex;
+    // justify-content: flex-end;
+}
+
+.teacher__title {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 1.23px;
+    letter-spacing: 0.08em;
+}
+
+.teacher__item {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.06em;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+.description__item {
+    font-weight: 500;
+    color: $second-text-color;
+
+    &:not(:last-child) {
+        margin-bottom: 23px;
+    }
+}
+
+.description__link {
+    font-weight: 500;
+    color: $brend-color;
+}
