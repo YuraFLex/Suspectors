@@ -134,6 +134,10 @@
   border: 2px solid #ffffff;
   background: transparent;
   color: $light-text-color;
+
+  font-size: 25px;
+  line-height: 1.2;
+
   padding-left: 40px;
   padding-top: 23px;
   padding-bottom: 23px;
@@ -146,17 +150,17 @@
     width: 478px;
     height: 70px;
   }
-  &:focus:not(:placeholder-show),
-  &:not(:placeholder-show){
+  &:focus:not(:placeholder-shown),
+  &:not(:placeholder-shown) {
     border-color: #fff;
   }
-  &:required:focus:valid:not(:placeholder-show),
-  &:required:valid:not(:placeholder-show) {
+
+  &:required:focus:valid:not(:placeholder-shown),
+  &:required:valid:not(:placeholder-shown) {
     border-color: green;
   }
-  &:required:focus:invalid:not(:placeholder-show)
- {
-    border-color: rgb(198, 9, 9);
+  &:required:focus:invalid:not(:placeholder-shown) {
+    border-color: rgba(198, 9, 9, 0.5);
     background-color: rgba(198, 9, 9, 0.25);
   }
 }
