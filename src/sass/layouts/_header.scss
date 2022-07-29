@@ -23,7 +23,7 @@
   @media screen and (min-width: 768px) {
     display: block;
     width: 128px;
-    height: 45px;
+    height: 50px;
     display: flex;
     align-items: center;
   }
@@ -85,14 +85,6 @@
   gap: 6px;
   display: flex;
   order: 3;
-
-  div {
-    position: absolute;
-    right: 8px;
-    width: 21px;
-    height: 2px;
-    background-color: $main-bg-color;
-  }
 
   .menu-open {
     fill: $main-bg-color;
