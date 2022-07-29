@@ -14,6 +14,8 @@
   }
 }
 
+// logo
+
 .header__logo {
   display: flex;
   align-items: center;
@@ -27,9 +29,7 @@
   }
 }
 
-.nav-wrapper {
-  display: flex;
-}
+// burger
 
 .burger-menu__icon {
   fill: currentColor;
@@ -50,6 +50,8 @@
     opacity: 1;
   }
 }
+
+// mobile menu
 
 .mobile-menu {
   position: absolute;
@@ -96,22 +98,9 @@
     fill: $main-bg-color;
   }
 
-  .tr1 {
-    transform: rotate(45deg);
-  }
-
-  .tr2 {
-    transform: rotate(-45deg);
-  }
-
   @media screen and (min-width: 1366px) {
     display: none;
   }
-}
-
-.btn-wrap {
-  display: flex;
-  align-items: center;
 }
 
 .mobile-menu__list {
@@ -170,6 +159,8 @@
   }
 }
 
+// main menu
+
 .nav {
   display: none;
 
@@ -177,6 +168,10 @@
     display: flex;
     align-items: center;
   }
+}
+
+.nav-wrapper {
+  display: flex;
 }
 
 .nav__list {
@@ -197,6 +192,11 @@
   &:focus {
     color: $brend-color;
   }
+}
+
+.btn-wrap {
+  display: flex;
+  align-items: center;
 }
 
 .header__btn {
@@ -232,13 +232,6 @@
     display: block;
   }
 }
-
-// @media screen and (min-width: 480px) {
-// }
-// @media screen and (min-width: 768px) {
-// }
-// @media screen and (min-width: 1366px) {
-// }
 
 .is-hidden {
   position: absolute;
