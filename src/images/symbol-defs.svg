@@ -26,10 +26,10 @@
 
 <!-- Mobile -->
 
-  <symbol id="btn-mobile-close" viewBox="0 0 53 32">
-<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.5714" d="M2.286 2.286h48"></path>
-<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.5714" d="M2.286 16h48"></path>
-<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.5714" d="M2.286 29.714h48"></path>
+<symbol id="btn-mobile-open" viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1H22" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M1 7H22" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M1 13H22" stroke="black" stroke-width="2" stroke-linecap="round"/>
 </symbol>
 
   <symbol id="btn-mobile-close" viewBox="0 0 30 32">
