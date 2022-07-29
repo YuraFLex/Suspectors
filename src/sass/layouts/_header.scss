@@ -1,55 +1,182 @@
-.header {
-  padding: 30px;
-  background-color: rgb(173, 170, 170);
-  // width: 100%;
-
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1440px) {
-  }
-}
-
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // position: fixed;
+  max-width: 480px;
+  padding: 30px 20px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1366px) {
+    min-width: 1366px;
+  }
 }
+
+// logo
 
 .header__logo {
+  display: flex;
+  align-items: center;
+
   @media screen and (min-width: 768px) {
+    display: block;
     width: 128px;
     height: 45px;
-  }
-  @media screen and (min-width: 1440px) {
-  }
-}
-
-.nav {
-  display: none;
-
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1440px) {
     display: flex;
     align-items: center;
   }
 }
 
+// burger
+
+.burger-menu__icon {
+  fill: currentColor;
+}
+
+.menu-open {
+  opacity: 1;
+
+  .mobile-menu_btn--close.is-open & {
+    opacity: 0;
+  }
+}
+
+.menu-close {
+  opacity: 0;
+
+  .mobile-menu_btn--close.is-open & {
+    opacity: 1;
+  }
+}
+
+// mobile menu
+
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 21, 24, 0.9);
+  text-align: center;
+
+  @media screen and (min-width: 1366px) {
+    display: none;
+  }
+}
+
+.mobile-menu__overlay {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 30px 20px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+}
+
+.mobile-menu_btn--close {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  position: relative;
+  gap: 6px;
+  display: flex;
+  order: 3;
+
+  div {
+    position: absolute;
+    right: 8px;
+    width: 21px;
+    height: 2px;
+    background-color: $main-bg-color;
+  }
+
+  .menu-open {
+    fill: $main-bg-color;
+  }
+
+  @media screen and (min-width: 1366px) {
+    display: none;
+  }
+}
+
+.mobile-menu__list {
+  padding-bottom: 50px;
+  text-align: left;
+  padding-top: 50px;
+
+  @media screen and (min-width: 768px) {
+    width: 330px;
+    margin: 0 auto;
+  }
+}
+
+.mobile-menu__link {
+  color: $light-text-color;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  transition: ease-in 0.3s;
+
+  &:hover,
+  &:focus {
+    color: $brend-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
+}
+
+.mobile-menu__btn-call {
+  background-color: transparent;
+  border: 2px solid $brend-color;
+  width: 260px;
+  padding: 14px;
+  margin-left: 40px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.14em;
+  color: $brend-color;
+  text-transform: uppercase;
+  transition: ease-in 0.3s;
+  margin: 0 auto;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $main-bg-color;
+    background-color: $brend-color;
+    color: $light-text-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+// main menu
+
+.nav {
+  display: none;
+
+  @media screen and (min-width: 1366px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nav-wrapper {
+  display: flex;
+}
+
 .nav__list {
   display: flex;
   gap: 40px;
-
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1440px) {
-  }
 }
 
 .nav__link {
@@ -65,6 +192,11 @@
   &:focus {
     color: $brend-color;
   }
+}
+
+.btn-wrap {
+  display: flex;
+  align-items: center;
 }
 
 .header__btn {
@@ -89,11 +221,27 @@
     background-color: $brend-color;
     color: $light-text-color;
   }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 260px;
+    padding: 15px 0;
+    margin-right: 40px;
+  }
+  @media screen and (min-width: 1366px) {
+    display: block;
+  }
 }
 
-// @media screen and (min-width: 320px) {
-// }
-// @media screen and (min-width: 768px) {
-// }
-// @media screen and (min-width: 1440px) {
-// }
+.is-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
