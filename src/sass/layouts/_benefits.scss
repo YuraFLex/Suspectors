@@ -19,6 +19,33 @@
     position: relative;
     margin: 0;
   }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/benefits/author.svg);
+  }
+
+  @media screen and(min-width: 1366px) {
+    &::before {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+.benefits__item--logof-modern {
+  &::before {
+    background-image: url(../images/benefits/modern.svg);
+  }
+}
+
+.benefits__item--logof-finance {
+  &::before {
+    background-image: url(../images/benefits/finance.svg);
+  }
 }
 
 .benefits__text {
@@ -40,12 +67,12 @@
   }
 }
 
-.benefits__icon-size {
-  width: 60px;
-  height: 60px;
+// .benefits__icon-size {
+//   width: 60px;
+//   height: 60px;
 
-  @media screen and(min-width: 1366px) {
-    width: 100px;
-    height: 100px;
-  }
-}
+//   @media screen and(min-width: 1366px) {
+//     width: 100px;
+//     height: 100px;
+//   }
+// }
