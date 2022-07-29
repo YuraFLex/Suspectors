@@ -5,35 +5,54 @@
 .guarantee {
     display: flex;
     flex-direction: column;
-    // max-width: 1314px;
     gap: 20px;
     padding-top: 38px;
     padding-bottom: 57px;
     padding-right: 122px;
     padding-left: 102px;
     background-color: $guarantee-bg-color;
-}
 
-.guarantee__item {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.4;
-}
+    &__item {
+        position: relative;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.4;
+        color: #3D3D3D;
+    }
 
-.guarantee__text {
-    color: $brend-color;
-}
+    &__text {
+        padding-left: 52px;
+    }
 
-.guarantee__item::before {
-    content: "";
-    display: inline-block;
-    margin-right: 30px;
-    width: 22px;
-    height: 30px;
-    background-image: url(..//images/guarantee/guarantee.svg);
-    background-size: contain;
-}
+    &__element {
+        color: $brend-color;
+    }
 
-.guarantee__item:not(:last-child) {
-    border-left: 1px dashed $second-text-color;
+    &__item::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        display: block;
+        margin-right: 30px;
+        width: 22px;
+        height: 30px;
+        background-image: url(../images/guarantee/guarantee.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 1;
+       
+    }
+
+    &__item:not(:last-child):after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        top: 25px;
+        left: 10px;
+        border: 1px dashed $second-text-color;
+    }
 }
