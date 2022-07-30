@@ -1,0 +1,54 @@
+.program.section {
+    padding-top: 50px;
+    background-color: $second-bg-color;
+}
+
+.section__title {
+    text-align: center;
+    color: $light-text-color;
+}
+
+.program__item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $light-text-color;
+}
+
+.program__sublist {
+    margin-top: 5px;
+    text-transform: none;
+
+    width: 176px;
+}
+
+.program__subitem {
+font-size: 12px;
+line-height: 2;
+letter-spacing: 0.08em;
+color: $brend-color;
+
+    &::before {
+        content: '―';
+        color: $brend-color;
+        margin-right: 5px;
+    }
+}
+
+.program__text {
+    margin-top: 5px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+    color: $second-text-color;
+    opacity: 0.5;
+}
+
+.image {
+    position: absolute;
+    
+   
+}
