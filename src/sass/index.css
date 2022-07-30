@@ -416,6 +416,7 @@ body {
 }
 
 .program.section {
+  position: relative;
   padding-top: 50px;
   padding-bottom: 70px;
   background-color: #111518;
@@ -423,6 +424,7 @@ body {
 @media screen and (min-width: 768px) {
   .program.section {
     padding-top: 60px;
+    padding-bottom: 35px;
   }
 }
 @media screen and (min-width: 1366px) {
@@ -647,20 +649,20 @@ body {
 }
 @media screen and (max-width: 767px) {
   .image {
-    bottom: -220%;
+    bottom: -1.7%;
     right: 0;
   }
 }
 @media screen and (min-width: 768px) {
   .image {
-    bottom: -142%;
+    bottom: -3%;
     right: 0;
   }
 }
 @media screen and (min-width: 1366px) {
   .image {
     bottom: -40%;
-    left: -100px;
+    left: 0;
   }
 }
 

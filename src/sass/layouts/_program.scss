@@ -1,10 +1,12 @@
 .program.section {
+    position: relative;
     padding-top: 50px;
     padding-bottom: 70px;
     background-color: $second-bg-color;
 
     @media screen and (min-width: 768px) {
         padding-top: 60px;
+        padding-bottom: 35px;
     }
 
     @media screen and (min-width: 1366px) {
@@ -236,17 +238,17 @@
     position: absolute;
 
     @media screen and (max-width:767px) {
-        bottom: -220%;
+        bottom: -1.7%;
         right: 0; 
     }
 
     @media screen and (min-width:768px) {
-        bottom: -142%;
+        bottom: -3%;
         right: 0; 
     }
 
     @media screen and (min-width:1366px) {
         bottom: -40%;
-        left: -100px; 
+        left: 0; 
     }
 }
