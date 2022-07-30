@@ -1,27 +1,82 @@
 <header class="header">
-  <div class="container header__container">
-    <a href="./index.html" class="logo header__logo">
-      <svg width="80" height="30">
+  <div class="header__container container">
+    <a href="./index.html">
+      <svg class="logo header__logo" width="80" height="30">
         <use href="./images/symbol-defs.svg#logo"></use>
       </svg>
     </a>
-    <nav class="nav">
-      <ul class="nav__list list">
-        <li class="nav__item item">
-          <a href="#" class="nav__link link">Studying program</a>
-        </li>
-        <li class="nav__item item">
-          <a href="#" class="nav__link link">about</a>
-        </li>
-        <li class="nav__item item">
-          <a href="#" class="nav__link link">training options</a>
-        </li>
-        <li class="nav__item item">
-          <a href="#" class="nav__link link">contacts</a>
-        </li>
-      </ul>
-    </nav>
 
-    <button type="button" class="header__btn btn">consultation by phone</button>
+    <!-- mobile menu -->
+
+    <div class="mobile-menu is-hidden" data-menu>
+      <div class="mobile-menu__overlay container">
+        <a href="./index.html">
+          <svg
+            class="logo header__logo header__logo--light"
+            width="80"
+            height="30"
+          >
+            <use href="./images/symbol-defs.svg#logo-light"></use>
+          </svg>
+        </a>
+
+        <ul class="mobile-menu__list list">
+          <li class="mobile-menu__item item">
+            <a href="#" class="mobile-menu__link link">Studying program</a>
+          </li>
+          <li class="mobile-menu__item item">
+            <a href="#" class="mobile-menu__link link">About</a>
+          </li>
+          <li class="mobile-menu__item item">
+            <a href="#" class="mobile-menu__link link">Training options</a>
+          </li>
+          <li class="mobile-menu__item item">
+            <a href="#" class="mobile-menu__link link">Contacts</a>
+          </li>
+        </ul>
+
+        <button type="button" class="mobile-menu__btn-call btn">
+          consultation by phone
+        </button>
+      </div>
+    </div>
+
+    <!-- mein menu -->
+    <div class="nav-wrapper">
+      <nav class="nav">
+        <ul class="nav__list list">
+          <li class="nav__item item">
+            <a href="#" class="nav__link link">Studying program</a>
+          </li>
+          <li class="nav__item item">
+            <a href="#" class="nav__link link">About</a>
+          </li>
+          <li class="nav__item item">
+            <a href="#" class="nav__link link">Training options</a>
+          </li>
+          <li class="nav__item item">
+            <a href="#" class="nav__link link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="btn-wrap">
+        <button class="mobile-menu_btn--close" type="button" data-menu-button>
+          <svg width="20" height="20">
+            <use
+              class="menu-open"
+              href="./images/symbol-defs.svg#btn-mobile-open"
+            ></use>
+            <use
+              class="menu-close"
+              href="./images/symbol-defs.svg#btn-mobile-close"
+            ></use>
+          </svg>
+        </button>
+        <button type="button" class="header__btn btn">
+          consultation by phone
+        </button>
+      </div>
+    </div>
   </div>
 </header>
