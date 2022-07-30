@@ -1,72 +1,140 @@
 <section class="program section">
   <div class="container">
     <h2 class="section__title">Our program</h2>
-    <ul class="program__list list">
-      <li class="program__item">
-        1 semester
-        <ul class="program__sublist list">
-          <li class="program__subitem">Grammar</li>
-          <p class="program__text">Nouns & Articles Adjectives & Adverb</p>
-          <li class="program__subitem">Vocabulary</li>
-          <p class="program__text">Family & Relations People & Society</p>
+    
+      <div class="program__container">
+        <div class="lines">
+          <div class="circle"></div>
+        </div>
+        <ul class="program__list list">
+          <li class="program__item">
+            <h3 class="program__title"><span class="letter">1</span> semester</h3>
+            <ul class="program__sublist list">
+                <li class="program__subitem">Grammar 
+                <p class="program__text">Nouns & Articles <br> Adjectives & Adverb</p>
+                </li>
+                <li class="program__subitem">Vocabulary
+                <p class="program__text">Family & Relations <br> People & Society</p>
+                </li>
+            </ul>
+          </li>
+          <li class="program__item">
+            <h3 class="program__title"><span class="letter">2</span> semester</h3>
+            <ul class="program__sublist list">
+              <li class="program__subitem">Grammar
+              <p class="program__text">Pronouns <br> Active Voice <br> Passive Voice</p>
+              </li>
+              <li class="program__subitem">Vocabulary
+              <p class="program__text">Home <br> School <br> Work</p>
+              </li>
+            </ul>
+          </li>
+          <li class="program__item">
+            <h3 class="program__title"><span class="letter">3</span> semester</h3>
+            <ul class="program__sublist list">
+              <li class="program__subitem">Grammar
+              <p class="program__text">Modal verbs <br> Infinitive <br> Gerund <br> Participle: 1, 2</p>
+              </li>
+              <li class="program__subitem">Vocabulary
+              <p class="program__text">Travel & Tourism <br> Culture & Free Time <br> Sport</p>
+              </li>
+              <li class="program__subitem">Writing
+              <p class="program__text">Informal Letter</p>
+              </li>
+            </ul>
+          </li>
+          <li class="program__item">
+            <h3 class="program__title"><span class="letter">4</span> semester</h3>
+            <ul class="program__sublist list">
+              <li class="program__subitem">Grammar
+              <p class="program__text">
+                Clauses: Conditional and Wishes <br> Direct / Reported speech <br> Preposition
+              <br> Conjunction <br> Numeral
+              </p>
+              </li>
+              <li class="program__subitem">Vocabulary
+              <p class="program__text">Healthy Living <br> Nature & Environment <br> Money</p>
+              </li>
+              <li class="program__subitem">Writing
+              <p class="program__text">Formal Letter</p>
+              </li>
+            </ul>
+          </li>
+          <li class="program__item">
+            <h3 class="program__title"><span class="letter">5</span> semester</h3>
+            <ul class="program__sublist list">
+              <li class="program__subitem">
+              <p class="program__text">Revision <br> Tests</p>
+              </li>
+            </ul>
+          </li>
         </ul>
-      </li>
-      <li class="program__item">
-        2 semester
-        <ul class="program__sublist list">
-          <li class="program__subitem">Grammar</li>
-          <p class="program__text">Pronouns Active Voice Passive Voice</p>
-          <li class="program__subitem">Vocabulary</li>
-          <p class="program__text">Home School Work</p>
-        </ul>
-      </li>
-      <li class="program__item">
-        3 semester
-        <ul class="program__sublist list">
-          <li class="program__subitem">Grammar</li>
-          <p class="program__text">Modal verbs Infinitive Gerund Participle: 1, 2</p>
-          <li class="program__subitem">Vocabulary</li>
-          <p class="program__text">Travel & Tourism Culture & Free Time Sport</p>
-          <li class="program__subitem">Writing</li>
-          <p class="program__text">Informal Letter</p>
-        </ul>
-      </li>
-      <li class="program__item">
-        4 semester
-        <ul class="program__sublist list">
-          <li class="program__subitem">Grammar</li>
-          <p class="program__text">
-            Clauses: Conditional and Wishes Direct / Reported speech Preposition
-            Conjunction Numeral
-          </p>
-          <li class="program__subitem">Vocabulary</li>
-          <p class="program__text">Healthy Living Nature & Environment Money</p>
-          <li class="program__subitem">Writing</li>
-          <p class="program__text">Formal Letter</p>
-        </ul>
-      </li>
-      <li class="program__item">
-        5 semester
-        <ul class="program__sublist list">
-          <li class="program__subitem"></li>
-          <p class="program__text">Revision 
-            Tests</p>
-        </ul>
-      </li>
-    </ul>
-    <div class="image">
-      <img
+        <div class="image">
+          <picture>
+            <source
+              media="(min-width: 1366px)"
+              srcset="
+                ./images/program/program_lg.png    1x,
+                ./images/program/program_lg@2x.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/program/program_md.png    1x,
+                ./images/program/program_md@2x.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/program/program_sm.png    1x,
+                ./images/program/program_sm@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img src="./images/program/program_sm.png"
+            alt="teacher"
+            loading="lazy" />
+          </picture>
+        </div>
+      </div>
+    </div>
+   
+         <!-- <picture> 
+             <!-- mobile screen -->
+             <!-- <source
+           media="(max-width: 767px)"
+           srcset="./images/program/program_sm.png 1x, ./images/program/program_sm@2x.png 2x"
+           type="png/image"> -->
+             <!-- tablet screen -->
+             <!-- <source
+           media="(min-width: 768px)"
+           srcset="./images/program/program_md.png 1x, ./images/program/program_md@2x.png 2x"
+           type="png/image"> -->
+             <!-- desktop screen -->
+              <!-- <source
+           media="(min-width: 1366px)"
+           srcset="./images/program/program_lg.png 1x, ./images/program/program_lg@2x.png 2x"
+           type="png/image">
+          
+           <img src="./images/program/program_sm.png" 
+           alt="Teacher with students"
+           loading="lazy">
+         </picture> -->
+   
+
+      <!-- <img
         srcset="
           ./images/program/program_sm.png 120w,
           ./images/program/program_md.png 374w,
-          ./images/program/program_lg.png 672w
-        "
-        sizes="(max-width: 767px) 120px, (min-width: 768px) 374px, 100vw"
+          ./images/program/program_lg.png 672w"
+        sizes="(max-width: 767px) 120px, (max-width: 1365px) 374px, (min-width:1366px) 672px"
         alt="Teacher with students"
-        height=""
-        width=""
+        src="./images/program/program_md.png"
         loading="lazy"
-      />
-    </div>
+      /> -->
   </div>
 </section>
