@@ -2,16 +2,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 480px;
-  padding: 30px 20px;
+  // max-width: 480px;
+  // padding: 30px 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   margin: 0 auto;
 
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
-  @media screen and (min-width: 1366px) {
-    min-width: 1366px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   // max-width: 768px;
+  // }
+  // @media screen and (min-width: 1366px) {
+  //   // max-width: 1366px;
+  // }
 }
 
 // logo
@@ -23,7 +25,7 @@
   @media screen and (min-width: 768px) {
     display: block;
     width: 128px;
-    height: 45px;
+    height: 50px;
     display: flex;
     align-items: center;
   }
@@ -86,14 +88,6 @@
   display: flex;
   order: 3;
 
-  div {
-    position: absolute;
-    right: 8px;
-    width: 21px;
-    height: 2px;
-    background-color: $main-bg-color;
-  }
-
   .menu-open {
     fill: $main-bg-color;
   }
@@ -132,24 +126,32 @@
   }
 }
 
-.mobile-menu__btn-call {
+.btn {
   background-color: transparent;
   border: 2px solid $brend-color;
   width: 260px;
   padding: 14px;
-  margin-left: 40px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.14em;
   color: $brend-color;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1366px) {
+    width: 354px;
+    padding: 25px 44px;
+    font-size: 14px;
+  }
+}
+
+.mobile-menu__btn-call {
+  margin-left: 40px;
   transition: ease-in 0.3s;
   margin: 0 auto;
 
   &:hover,
   &:focus {
-    border: 2px solid $main-bg-color;
     background-color: $brend-color;
     color: $light-text-color;
   }
@@ -200,19 +202,8 @@
 }
 
 .header__btn {
-  background-color: transparent;
-  border: 2px solid $brend-color;
-  width: 354px;
-  padding: 25px 44px;
-  margin-left: 40px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.14em;
-  color: $brend-color;
-  text-transform: uppercase;
   transition: ease-in 0.3s;
-
+  margin-left: 40px;
   display: none;
 
   &:hover,
@@ -224,8 +215,6 @@
 
   @media screen and (min-width: 768px) {
     display: block;
-    width: 260px;
-    padding: 15px 0;
     margin-right: 40px;
   }
   @media screen and (min-width: 1366px) {

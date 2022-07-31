@@ -6,6 +6,10 @@
   );
 }
 
+.container-features {
+  position: relative;
+}
+
 .title--white {
   color: $light-text-color;
 
@@ -31,6 +35,7 @@
   padding: 35px 22px;
   background-color: $main-bg-color;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  z-index: 100;
 
   @media screen and(min-width: 768px) {
     padding: 40px 98px;

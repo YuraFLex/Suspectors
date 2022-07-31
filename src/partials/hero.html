@@ -1,3 +1,27 @@
-<section>
-  <h1>Hero</h1>
+<section class="section hero">
+  <div class="container hero__container">
+    <div class="hero-content">
+      <h1 class="hero__title title">Complex preparation for English UPE</h1>
+      <p class="hero__paragraph hero__paragraph--gray">It won’t be easy.</p>
+      <p class="hero__paragraph">
+        But you’re guaranteed to get <span>+25 points</span>
+      </p>
+      <button class="hero__btn btn" type="button">I want a free lesson</button>
+    </div>
+    <picture class="hero__image">
+      <source
+        media="(min-width: 1366px)"
+        srcset="./images/hero/hero_lg.png 1x, ./images/hero/hero_lg@2x.png 2x"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="./images/hero/hero_md.png 1x, ./images/hero/hero_md@2x.png 2x"
+      />
+      <source
+        media="(max-width: 319px)"
+        srcset="./images/hero/hero_sm.png 1x, ./images/hero/hero_sm@2x.png 2x"
+      />
+      <img src="./images/hero/hero_lg.png" alt="gallery 1" loading="lazy" />
+    </picture>
+  </div>
 </section>
