@@ -36,29 +36,64 @@
 
     @media screen and(min-width:768px) {
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 46px;
+        flex-wrap: nowrap;
+        padding: 40px;
+        max-width: 668px;
+        
         box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-        padding-top: 40px;
-        padding-bottom: 40px;
     }
 
-    @media screen and(min-width:768px) {
+    @media screen and(min-width:1366px) {
         display: flex;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        flex-direction: row;
+        gap: 40px;
+        flex-wrap: nowrap;
+        padding: 50px 112px 50px 82px;
+        max-width: 1090px;
     }
 }
 
-.reviews__icon {
 
-    @media screen and (max-width: 767px) {
-        margin-top: 19px;
-        margin-bottom: 22px;
+.wrapperbig {
+    @media screen and (max-width:767px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
     }
 
-    @media screen and(min-width:768px) {
-        margin-top: 15px;
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    @media screen and (min-width:1366px) {
+        gap: 17px;
+    }
+}
+
+
+.reviews__container {
+    @media screen and (max-width:767px) {
+        max-width: 241px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-direction: column;
+        max-width: 412px;
+    }
+
+    @media screen and (min-width:1366px) {
+        max-width: 706px;
     }
 }
 
@@ -72,6 +107,7 @@
         font-size: 14px;
         line-height: calc(17 / 14);
         text-align: center;
+        margin-top: 21px;
     }
 
     @media screen and (min-width:768px) {
@@ -158,13 +194,6 @@
     
     @media screen and (min-width:1366px) {
         margin-top: 40px;
-    }
-}
-
-.wrapperbig {
-    @media screen and (min-width:768px) {
-        margin-left: 40px;
-        display: block;
     }
 }
 
