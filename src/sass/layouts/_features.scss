@@ -1,8 +1,8 @@
 .section-features {
   background-image: linear-gradient(
     to bottom,
-    $second-bg-color 50%,
-    $main-bg-color 50%
+    $second-bg-color 60%,
+    $main-bg-color 40%
   );
 }
 
@@ -12,6 +12,10 @@
 
 .title--white {
   color: $light-text-color;
+
+  @media screen and(max-width: 767px) {
+    width: 180px;
+  }
 
   @media screen and(min-width: 768px) {
     text-align: center;
@@ -69,12 +73,17 @@
     width: calc((100% - 40px) / 2);
     margin-bottom: 0;
   }
+
+  @media screen and(min-width: 1366px) {
+    width: calc((100% - 60px) / 3);
+    margin-bottom: 0;
+  }
   // width: 336px;
 
   &::before {
     display: block;
     counter-increment: section;
-    content: '\2015 'counter(section);
+    content: '\2015 0'counter(section);
     font-weight: 700;
     font-size: 20px;
     line-height: calc(33 / 20);

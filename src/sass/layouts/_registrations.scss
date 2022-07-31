@@ -104,6 +104,8 @@
   height: 48px;
   margin-top: 50px;
 
+  transition: 250ms ease-in-out;
+
   @media screen and (min-width: 768px) {
     margin-top: 30px;
   }
@@ -134,11 +136,13 @@
   border: 2px solid #ffffff;
   background: transparent;
   color: $light-text-color;
+
+  transition: 250ms ease-in-out;
   &::placeholder {
     color: $light-text-color;
   }
 
-  font-size: 25px;
+  font-size: 14px;
   line-height: 1.2;
 
   padding-left: 40px;
@@ -150,9 +154,16 @@
   }
 
   @media screen and (min-width: 1366px) {
+    font-size: 20px;
     width: 478px;
     height: 70px;
   }
+
+  &:required:focus:invalid:not(:placeholder-shown) {
+    border-color: rgba(198, 9, 9, 0.5);
+    background-color: rgba(198, 9, 9, 0.25);
+  }
+
   &:focus:not(:placeholder-shown),
   &:not(:placeholder-shown) {
     border-color: #fff;
@@ -161,9 +172,5 @@
   &:required:focus:valid:not(:placeholder-shown),
   &:required:valid:not(:placeholder-shown) {
     border-color: green;
-  }
-  &:required:focus:invalid:not(:placeholder-shown) {
-    border-color: rgba(198, 9, 9, 0.5);
-    background-color: rgba(198, 9, 9, 0.25);
   }
 }

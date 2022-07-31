@@ -1,6 +1,13 @@
 .guarantee-section {
     background-color: $guarantee-bg-color;
-    width: 100%;
+}
+
+.mob-bg-color {
+    background-color: $guarantee-bg-color;
+
+    @media screen and(min-width: 768px) {
+      background-color: transparent;      
+    }
 }
 
 .guarantee-title {
