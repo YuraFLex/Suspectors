@@ -15,7 +15,9 @@
   }
 }
 
-.section__title {
+.title-program {
+  color: $light-text-color;
+
   text-align: center;
 
   @media screen and (min-width: 768px) {
@@ -26,10 +28,6 @@
   @media screen and (min-width: 1366px) {
     margin-bottom: 58px;
   }
-}
-
-.title-program {
-  color: $light-text-color;
 }
 
 .program__container {
