@@ -1,105 +1,108 @@
-.title {
-    text-align: center;
-    font-size: 20px;
+.how {
+  padding-bottom: 40px;
 
-    @media screen  and (min-width: 768px){
-        font-size: 26px;
-    }
-    @media screen  and (min-width: 1366px){
-        font-size: 46px;
-        text-align: start;;
-    }
+  @media screen and(min-width: 768px) {
+    padding-bottom: 70px;
+  }
+
+  @media screen and(min-width: 1366px) {
+    padding-bottom: 130px;
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 20px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
+  @media screen and (min-width: 1366px) {
+    font-size: 46px;
+    text-align: start;
+  }
 }
 .work-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
 
-&__card {
+  &__card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    
+
     padding: 30px 20px;
     text-align: center;
-    
+
     box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
-    transition: all .25s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    @media screen  and (min-width: 768px){
-        grid-template-columns: 1fr 1fr ;
-        gap: 20px;
-        
-    }
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 
-    @media screen  and (min-width: 1366px){
-        grid-template-columns: 1fr 1fr 1fr ;
-        gap: 30px;
-       
-    }
+  @media screen and (min-width: 1366px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
 
-&__icon{
-    
+  &__icon {
     fill: currentColor;
-    color: $brend-color ;
-}
-&__title {
-    
-    
+    color: $brend-color;
+  }
+  &__title {
     font-size: 14px;
     line-height: 1.4;
     letter-spacing: 0.08em;
 
     &::after {
-        
-    content:'';
+      content: '';
 
-    display: block;
-    margin: 0 auto;
-    margin-top:20px ;
-    
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
 
-    width: 20px;
-    height: 2px;
+      width: 20px;
+      height: 2px;
 
-    background-color: $brend-color;
+      background-color: $brend-color;
     }
 
-    @media screen  and (min-width: 1366px){
-        font-size: 20px;
-        line-height: 1.4;
+    @media screen and (min-width: 1366px) {
+      font-size: 20px;
+      line-height: 1.4;
     }
-}
+  }
 
-&__text {
-
+  &__text {
     font-size: 12px;
     line-height: 1.6;
     letter-spacing: 0.08em;
 
-    color: $second-text-color ;
+    color: $second-text-color;
 
-    @media screen  and (min-width: 1366px){
-        font-size: 18px;
-        line-height: 1.5;
+    @media screen and (min-width: 1366px) {
+      font-size: 18px;
+      line-height: 1.5;
     }
-}
+  }
 
-&__card:hover,
-&__card:focus {
+  &__card:hover,
+  &__card:focus {
     background-color: $brend-color;
     color: $light-text-color;
     .work-list__icon {
-        color: $light-text-color;
+      color: $light-text-color;
     }
     .work-list__title::after {
-        background-color: $light-text-color;
+      background-color: $light-text-color;
     }
     .work-list__text {
       color: $light-text-color;
     }
+  }
 }
-}
-
