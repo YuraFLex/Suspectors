@@ -1,3 +1,34 @@
+<<<<<<< HEAD
+.section {
+    @media screen and (max-width:767px) {
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width:768px) {
+       padding-bottom: 70px;
+    }
+
+    @media screen and(min-width:1366px) {
+        padding-top: 60px;
+        padding-bottom: 130px;
+    }
+}
+
+.section__title.review {
+    text-align: center;
+
+    @media screen and(max-width:767px) {
+        margin-bottom: 25px;
+    }
+
+    @media screen and(min-width:768px) {
+        margin-bottom: 30px;
+    }
+
+}
+
+=======
+>>>>>>> reviews/margo
 .reviews {
   @media screen and (max-width: 767px) {
     padding-bottom: 60px;

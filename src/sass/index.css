@@ -803,18 +803,18 @@ body {
   }
 }
 
-.title-program {
+.section__title.title-program {
   color: #ffffff;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
-  .title-program {
+  .section__title.title-program {
     text-align: start;
     margin-bottom: 52px;
   }
 }
 @media screen and (min-width: 1366px) {
-  .title-program {
+  .section__title.title-program {
     margin-bottom: 58px;
   }
 }
@@ -843,7 +843,7 @@ body {
 @media screen and (min-width: 1366px) {
   .lines::before {
     height: 3px;
-    width: 120%;
+    width: 111.85%;
     left: -10%;
   }
 }
@@ -1030,7 +1030,7 @@ body {
 }
 @media screen and (min-width: 1366px) {
   .image {
-    bottom: -40%;
+    bottom: -43%;
     left: 0;
   }
 }
@@ -1054,20 +1054,6 @@ body {
 @media screen and (min-width: 768px) {
   .title--white {
     text-align: center;
-  }
-}
-@media screen and (min-width: 1366px) {
-  .title--white {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
   }
 }
 
