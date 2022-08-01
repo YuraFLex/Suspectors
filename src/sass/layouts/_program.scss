@@ -35,8 +35,31 @@
 }
 
 .lines {
+
+  @media screen and (max-width: 1365px) {
+    display: none;
+  }
+
+  &::before {
+
+    @media screen and (min-width: 1366px) {
+      content: '';
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      top: 27.2%;
+      background-color: $main-bg-color;
+    }
+  }
+}
+
+.lines__small {
   margin-left: 40px;
   position: relative;
+
+  @media screen and (min-width: 1366px) {
+    display: none;
+  }
 
   &::before {
     content: '';
@@ -51,20 +74,10 @@
     @media screen and (min-width: 768px) {
       height: 770px;
     }
-
-    @media screen and (min-width: 1366px) {
-      height: 3px;
-      width: 111.5%;
-      left: -10%;
-    }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1365px) {
     margin-left: 35px;
-  }
-
-  @media screen and (min-width: 1366px) {
-    margin-left: 0;
   }
 }
 
