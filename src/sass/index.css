@@ -149,6 +149,14 @@ body {
   }
 }
 
+.header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgb(255, 255, 255);
+}
+
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -191,7 +199,7 @@ body {
 }
 
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -371,25 +379,46 @@ body {
   overflow: hidden;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .hero {
-  padding-top: 0;
+  padding-top: 130px;
   padding-bottom: 30px;
-  background-image: url(../images/hero/wave-bg_sm.png);
+  overflow: hidden;
+  background-image: url(../images/hero/wave-bg_md.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 768px 620px;
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(../images/hero/wave-bg_md.png);
+    padding-top: 158px;
+    background-size: 1360px 560px;
   }
 }
 @media screen and (min-width: 1366px) {
   .hero {
     background-image: url(../images/hero/wave-bg_lg.png);
+    background-size: 1680px 786px;
+    padding-top: 130px;
   }
 }
 
+.bg-wave {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 450px;
+  z-index: -100;
+  width: 100vw;
+}
+@media screen and (min-width: 768px) {
+  .bg-wave {
+    right: 0;
+    left: 0;
+  }
+}
 @media screen and (min-width: 768px) {
   .hero__container {
     display: flex;
@@ -484,7 +513,7 @@ body {
     width: 370px;
     position: relative;
     right: -30px;
-    z-index: 0;
+    z-index: 1;
   }
 }
 @media screen and (min-width: 1366px) {
@@ -1387,17 +1416,17 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .section {
+  .section.reviews {
     padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) {
-  .section {
+  .section.reviews {
     padding-bottom: 70px;
   }
 }
 @media screen and (min-width: 1366px) {
-  .section {
+  .section.reviews {
     padding-top: 60px;
     padding-bottom: 130px;
   }
