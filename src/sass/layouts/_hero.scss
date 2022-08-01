@@ -8,14 +8,37 @@
   background-size: 768px 620px;
   // background-position: inherit;
 
+  // mobile retina screen
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero/wave-bg_md@2x.png);
+  }
+
+  // tablet screen
   @media screen and (min-width: 768px) {
+    background-image: url(../images/hero/wave-bg_md.png);
     padding-top: 158px;
     background-size: 1360px 560px;
+    // tablet retina screen
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/wave-bg_md@2x.png);
+    }
   }
+
+  // desktop screen
   @media screen and (min-width: 1366px) {
     background-image: url(../images/hero/wave-bg_lg.png);
     background-size: 1680px 786px;
     padding-top: 130px;
+    // desktop retina screen
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/wave-bg_lg@2x.png);
+    }
   }
 }
 
@@ -23,11 +46,9 @@
   position: absolute;
   right: 0;
   left: 0;
-  // bottom: 0;
   top: 450px;
   z-index: -100;
   width: 100vw;
-  // transform: scale(2.1);
 
   @media screen and (min-width: 768px) {
     right: 0;
