@@ -15,7 +15,7 @@
   }
 }
 
-.section__title.title-program {
+.title-program {
   color: $light-text-color;
 
   text-align: center;
@@ -54,7 +54,7 @@
 
     @media screen and (min-width: 1366px) {
       height: 3px;
-      width: 111.85%;
+      width: 120%;
       left: -10%;
     }
   }
@@ -236,7 +236,7 @@
   position: absolute;
 
   @media screen and (max-width: 767px) {
-    bottom: -1.7%;
+    bottom: -7%;
     right: 0;
   }
 
@@ -246,7 +246,7 @@
   }
 
   @media screen and (min-width: 1366px) {
-    bottom: -43%;
+    bottom: -35%;
     left: 0;
   }
 }
