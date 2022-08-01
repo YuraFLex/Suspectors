@@ -1418,16 +1418,16 @@ body {
   }
 }
 
-.section__title {
+.section__title.review {
   text-align: center;
 }
 @media screen and (max-width: 767px) {
-  .section__title {
+  .section__title.review {
     margin-bottom: 25px;
   }
 }
 @media screen and (min-width: 768px) {
-  .section__title {
+  .section__title.review {
     margin-bottom: 30px;
   }
 }
