@@ -150,6 +150,7 @@
   text-transform: uppercase;
 
   @media screen and (min-width: 1366px) {
+    border: 2px solid $brend-color;
     width: 354px;
     padding: 25px 44px;
     font-size: 14px;
@@ -219,6 +220,7 @@
 
   &:hover,
   &:focus {
+    border: 2px solid $brend-color;
     background-color: $brend-color;
     color: $light-text-color;
   }
