@@ -104,7 +104,7 @@
   height: 48px;
   margin-top: 50px;
 
-  transition: 250ms ease-in-out;
+  transition: 0.3s ease-in-out;
 
   @media screen and (min-width: 768px) {
     margin-top: 30px;
@@ -117,7 +117,8 @@
 
   &:hover,
   &:focus {
-    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.75);
+    background-color: $main-bg-color;
+    color: $brend-color;
   }
 }
 .registration__form--label + .registration__form--label {
