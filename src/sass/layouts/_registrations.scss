@@ -117,7 +117,8 @@
 
   &:hover,
   &:focus {
-    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.75);
+    background-color: $main-bg-color;
+    color: $brend-color;
   }
 }
 .registration__form--label + .registration__form--label {
