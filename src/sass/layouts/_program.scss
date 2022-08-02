@@ -2,6 +2,7 @@
   position: relative;
   padding-top: 50px;
   padding-bottom: 70px;
+  bottom: -1px;
   background-color: $second-bg-color;
 
   @media screen and (min-width: 768px) {
@@ -259,7 +260,13 @@
   }
 
   @media screen and (min-width: 1366px) {
-    bottom: -40%;
+    bottom: -33%;
     left: 0;
+  }
+}
+
+.image__height {
+  @media screen and (min-width: 1366px) {
+    height: 460px;
   }
 }
