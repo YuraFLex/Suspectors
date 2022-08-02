@@ -10,7 +10,7 @@ $('.reviews__list').slick({
     {
       breakpoint: 767,
       settings: {
-        infinite: false,
+        infinite: true,
         arrows: true
       },
     },
@@ -28,7 +28,7 @@ $('.reviews__pagination').slick({
       settings: {
         slidesToShow: 7,
         slidesToScroll: 7,
-        infinite: false,
+        infinite: true,
         arrows: false
       },
     },
