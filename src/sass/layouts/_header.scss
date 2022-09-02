@@ -5,6 +5,13 @@
   z-index: 100;
 
   background-color: rgb(255, 255, 255);
+
+  transition: background-color 500ms ease-in, backdrop-filter 500ms ease-in;
+
+  &--no-transparency {
+    background-color: rgba(40, 36, 36, 0.6);
+    backdrop-filter: blur(9px);
+  }
 }
 
 .header__container {
